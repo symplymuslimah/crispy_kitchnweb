@@ -1,0 +1,370 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Crispy kitchen website</title>
+      <!--CSS LINK-->
+      <link rel="stylesheet" href="style.css">
+      <!--icon scout link-->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+  <body>
+<section class="container">
+    <!--HEADER SECTION-->
+  <div class="nav-heading-container">
+      <div class="icon-nav">
+        <i class="uil uil-bars" onclick="showmenu()"></i>
+      </div>
+        <div class="logo">
+            <a href="#" >Crispy Kitchen</a>
+           </div>
+         <div class="navigation">
+            <nav class="nav-bar">
+                <div class="cancel-nav">
+                    <i class="uil uil-times" onclick="hidemenu()"></i>
+                  </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="update.html">Our Updates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                       </ul>
+              </nav>
+         </div>
+        
+     <div class="btn-container">
+             <button class="btn" id="r-btn">
+                 Reservation
+             </button>
+         </div>
+    </div> <!--HEADER SECTION END-->
+                <!--video backround section-->
+ <video autoplay loop muted class="background-clip">
+       <source src="bakvid.mp4"> 
+  </video> <!--video end-->
+
+             <!--landing-page content section-->
+    <div class="landing-page-container">
+         <div class="landing-page-text">
+           <div class="caption">
+        <h1>Delicious <br> Steaks</h1> 
+     </div>
+    <div class="icon-star">
+       <div class="number">
+        <h2>4.4/5</h2>
+     </div>
+           <div class="star">
+              <i class="uil uil-star"></i>
+               <i class="uil uil-star"></i>
+               <i class="uil uil-star"></i>
+               <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+             </div>
+           </div>
+        <div class="text-xx">
+          <p> From <span>1204+</span> Customer reviews</p>
+        </div>
+   </div>  
+   <div class="landing-page-image-text">
+         <div class="image-text-content">
+        <img src="imgtext1.jpg" id="image">
+        <div class="content-image">
+            <p id="text">Sausage Pasta</p>
+            <a href="#" id="price"></a>
+            <h4 id="review">4.4/5</h4>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+                </div>
+                <div class="icon-content">
+                  <button class="next-btn" id="btn-next">
+                      <span><i class="uil uil-arrow-up-left"></i> </span> 
+                      </button>
+                      <button class="prev-btn" id="btn-prev">
+                     <span> <i class="uil uil-arrow-up-right"></i> </span> 
+                      </button>
+                   </div> 
+            </div>
+         </div>
+     </div>    
+</div>
+</section>
+
+  <!--RESERVATION BUTTON CLICK SECTION-->
+<section class="reservation-section" id="reserve-section">
+          <div class="cancel-icon" id="icon-cancel"><i class="uil uil-times"></i></div>
+            <div class="reservation-heading">
+                 <h1>Reserve A Table</h1>
+             </div>
+
+   <form>
+      <div class="input-container">
+        <div class="fullname">
+            <label >Full Name</label>
+            <input type="text" placeholder="your-name">
+        </div>
+        <div class="email-view">
+            <label>Your email</label>
+            <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="number-view">
+            <label>Phone Number</label>
+            <input type="text" name="number" placeholder="+194-3567-890">
+         </div>
+        <div class="number">
+          <label>Number of persons</label>
+          <input type="number" placeholder="number of persons">
+        </div>
+       <div class="date">
+           <label>Date</label>
+           <input type="date" name="date" >
+       </div>
+        <div class="time">
+        <label>Time</label>
+        <input type="time" placeholder="time">
+    </div>
+       <div class="request">
+        <label >Special request</label>
+        <textarea name="" rows="5" cols="15"></textarea>
+       </div>
+      </div>  <!--input container end-->
+      <div class="btn">
+          <input type="submit" value="submit request">
+      </div>
+    </form>
+  </section>
+  <!--RESERVATION BUTTON CLICK SECTION END-->
+  
+  <!--special menu section-->
+ <section class="special-menus">
+       <div class="menu-heading">
+           <h2>Special Menus</h2>
+       </div>
+      <div class="special-menu-container">
+         <div class="menu-content">
+                   <img src="menu1.jpg" >
+               <div class="menu-text">
+                   <div class="menu-time"><h4>Breakfast</h4></div>
+                   <div class="para"><p>Morning fresh</p></div>
+                   <div class="price">$12.50</div>
+                   <div class="review-menu">
+                       <h3>4.3/5</h3>
+                       <i class="uil uil-star"></i>
+                       <i class="uil uil-star"></i>
+                       <i class="uil uil-star"></i>
+                       <i class="uil uil-star"></i>
+                       <i class="uil uil-star"></i>
+                       <span>103 Reviews</span>
+                   </div>
+
+               </div>
+           </div>
+  <div class="menu-content">
+            <img src="menu2.jpg" >
+        <div class="menu-text">
+            <div class="menu-time"><h4>Lunch</h4></div>
+            <div class="para"><p>Tooplate Soup</p></div>
+            <div class="price">$24.50</div>
+            <div class="review-menu">
+                <h3>3/5</h3>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <span>50 Reviews</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="menu-content">
+        <img src="menu3.jpg" >
+    <div class="menu-text">
+        <div class="menu-time"><h4>Dinner</h4></div>
+        <div class="para"><p>Premium Steak</p></div>
+        <div class="price">$50.00</div>
+        <div class="review-menu">
+            <h3>3/5</h3>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <span>86 Reviews</span>
+        </div>
+
+    </div>
+</div>
+<div class="menu-content">
+    <img src="menu4.jpg" >
+<div class="menu-text">
+    <div class="menu-time"><h4>Dinner</h4></div>
+    <div class="para"><p>Seafood Set</p></div>
+    <div class="price">$86</div>
+    <div class="review-menu">
+        <h3>3/5</h3>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <span>44 Reviews</span>
+    </div>
+
+         </div>
+    </div>
+<div class="menu-content">
+    <img src="menu5.jpg" >
+   <div class="menu-text">
+       <div class="menu-time"><h4>Lunch</h4></div>
+         <div class="para"><p>Morning fresh</p></div>
+          <div class="price">$34.50</div>
+    <div class="review-menu">
+        <h3>4.3/5</h3>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <span>102 Reviews</span>
+    </div>
+</div>
+</div>
+<div class="menu-content">
+    <img src="menu6.jpg" >
+   <div class="menu-text">
+        <div class="menu-time"><h4>Breakfast</h4></div>
+        <div class="para"><p>Morning fresh</p></div>
+        <div class="price">$12.50</div>
+    <div class="review-menu">
+        <h3>4.3/5</h3>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <i class="uil uil-star"></i>
+        <span>65 Reviews</span>
+    </div>
+</div>
+</div>
+     </div>  <!--special menu container end-->
+   </section>    <!--section end-->
+
+   <!--background image section-->
+<section class="background-image">
+  </section>
+
+  <!--news and event section-->
+<section class="news-event-section">
+            <div class="news-event-heading">
+                   <h1>News & Events</h1>
+               </div>
+               
+               <!--news event first container-->
+ <div class="news-event-container">
+        <div class="news-event-content">
+             <a href="updatelink.html"><img src="event1.jpg"></a> 
+          <div class="event-text">
+                  <div class="featured-text">Featured</div>
+                  <div class="other-text">
+                      <p>Healthy Lifestyle and happy
+                      living tips </p>
+                    </div>
+             </div>
+        </div>  <!--news event content end-->
+      <div class="news-event-content">
+            <a href="updatelink.html"><img src="event2.jpg"></a>
+        <div class="event-text">
+                <div class="featured-text">Featured</div>
+                <div class="other-text">
+                    <p>How to make a healthy meal
+                     </p>
+                  </div>
+           </div>
+       </div>  <!--news event content end-->
+ </div>  <!--news-event-container end-->
+
+  <!--news event second container-->
+ <div class="news-event-second-container">
+     <div class="news-event-second-content">
+             <a href="#"><img src="event3.jpg"></a>
+           <div class="secondevent-text">
+                   <div class="promotion">
+                        <p>promotions</p>
+                        <span>8 April 2022</span>
+                    </div>
+                  <div class="second-text">
+                    <p>Is coconut good for you? </p>
+                     </div>
+               </div> 
+          </div>    <!--news event second content one-->
+     <div class="news-event-second-content">
+            <a href="updatelink.html"><img src="event4.jpg"></a>
+         <div class="secondevent-text">
+              <div class="news">News</div>
+                 <div class="second-text">
+               <p>Salmon Steak Noodles </p>
+               </div>
+           </div> 
+        </div>    <!--news event second content two-->
+    <div class="news-event-second-content">
+        <a href="updatelink.html"> <img src="event5.jpg"> </a>
+     <div class="secondevent-text">
+           <div class="promotion">
+               <p>Meeting</p>
+               <span>30 April 2022</span>
+           </div>
+         <div class="second-text">
+           <p>Making a healthy salad</p>
+            </div>
+       </div> 
+     </div>    <!--news event second content end-->  
+ </div>  <!--news event second container end-->
+ </section>
+
+  <!--footer section-->
+   <section class="footer-section">
+    <footer>
+ <div class="footer-heading">
+            <h2>Crispy Kitchen</h2>
+        </div>
+  <div class="footer-container">
+            <div class="footer-content1">
+                <h3>Location</h3>
+                <p>121 Einstein Loop N, Bronx, NY 10475,<br> United States </p>
+                <a href="https://www.google.ng/maps/search/121+Einstein+Loop+N,+Bronx,+NY+10475,%3Cbr%3E+United+Stat/@40.8648248,-73.8254862,17z/data=!3m1!4b1?entry=ttu ">Directions</a>
+            </div>
+           <div class="footer-content2">
+                <h3>Opening hours</h3>
+                    <ul>
+                          <li> Monday - Friday </li> 
+                             <li>  10:00 AM - 08:00 PM  </li>
+                          <li>Tel: 010-02-0340    </li>
+                     </ul>
+              </div>
+              <div class="footer-content3">
+                  <h3>Social</h3>
+                  <div class="icon-social">
+                    <i class="uil uil-facebook"></i>
+                    <i class="uil uil-instagram"></i>
+                      <i class="uil uil-twitter"></i>
+                      <i class="uil uil-youtube"></i>
+                  </div>
+                  <div class="paragraph-text">
+                      <p> Copyright © 2022 Crispy Kitchen Co.,<br> Ltd. </p>
+                       <span>Design:MME Tech</span>
+                  </div>
+              </div>
+  </div>
+    </footer>
+</section>
+
+    
+      <script src="myscript.js"> </script>
+  </body>
+  </html>
