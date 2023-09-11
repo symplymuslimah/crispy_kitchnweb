@@ -153,7 +153,7 @@ nav ul li a:hover {
     width:70%;
     height:90vh;
     background-color: #ffffff;
-    position: fixed;
+    position: absolute;
     top:15%;
     left: 10%;
     border-radius:15px;
@@ -163,11 +163,11 @@ nav ul li a:hover {
 }
 .cancel-icon {
     position: absolute; 
-    top:0;
+    top:3;
     right:5%;
 }
 .cancel-icon i {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 .reservation-heading h1 {
       font-size:2rem;
@@ -498,11 +498,15 @@ footer {
     font-size:1rem;
      font-weight:600;
 }
+    .reservation-heading h1 {
+        font-size:1rem;
+        font-weight:700;}
    .input-container {
         display: grid;
         grid-template-columns:repeat(1,1fr);
         justify-content: center;
         padding:20px;
+       margin-left:25px;
     }
     .news-event-content img {
         width:380px; height: auto;
@@ -518,6 +522,15 @@ footer {
     top:10%;
     
 }
+}
+@media (max-width:480px) {
+.logo a {
+    font-size:1.2rem;
+    font-weight:600;
+}
+ .btn-container .btn {
+     font-size:1.2rem;
+ }
 }
 
 
