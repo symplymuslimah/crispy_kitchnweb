@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:poppins;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
 /* LANDING PAGE CONTENT */
 .container {
     width: 100%; height: 100vh;
@@ -20,7 +22,7 @@
 }
 .logo a {
     font-size:1.7rem;
-    font-weight: 700;
+    font-weight:600;  /* changes */
     color: #000000;
 }
 .logo a:hover {
@@ -35,11 +37,13 @@
      justify-content: space-around;
 }
 nav ul li {
-    display: inline-block;
+    display:inline-block;
+
 }
 nav ul li a {
     color: #000000; padding:0px 12px;
-    font-size:1.4rem;
+    font-size:1.2rem;
+    transition:.5s;
 }
 nav ul li a:hover {
     color:#f44749;
@@ -80,15 +84,15 @@ nav ul li a:hover {
 }
 .caption h1 {
      font-size:5rem;
-    font-weight: 800;
-    margin-bottom:25px;
+    font-weight:600; /*changes */
+    margin-bottom:20px; /*changes */
 }
 .icon-star {
     display:flex; flex-direction: row; gap:10px;
-    margin-bottom:10px;
+  /*  margin-bottom:10px; */
 }
 .icon-star h2 {
-    font-weight: 700; font-size:1.7rem;
+    font-weight:400; /*changes */ font-size:1.7rem;
     color: #ffffff;
 }
 .icon-star i {
@@ -102,7 +106,7 @@ nav ul li a:hover {
     font-size: 1.5rem;  
 }
 .text-xx span {
-  font-weight: 900;
+  font-weight:600; /*changes */
 }
 .image-text-content {
     position: relative;
@@ -121,7 +125,7 @@ nav ul li a:hover {
     font-weight:600;
 }
 .content-image h4 {
-    font-weight:900; font-size: 1.5rem;
+    font-weight:600; /*changes */ font-size: 1.5rem;
     color: #ffffff;
     margin-top: 10px;
 }
@@ -150,28 +154,28 @@ nav ul li a:hover {
 
 /*  reservation button section */
 .reservation-section {
-    width:70%;
+    width:90%;
     height:100vh;
     background-color: #ffffff;
-    position: absolute;
-    top:15%;
-    left: 10%;
+    position:absolute;  /*CHANGES */
+    top:13%;
+    left:5%;
     border-radius:15px;
-    z-index:1001;
+    z-index: 9999;
     padding:20px 0px;
     display: none;
 }
 .cancel-icon {
     position: absolute; 
-    top:3;
+    top:3;  /*CHANGES */
     right:5%;
 }
 .cancel-icon i {
-    font-size: 1.7rem;
+    font-size: 1.7rem; /*CHANGES */
 }
 .reservation-heading h1 {
       font-size:2rem;
-      font-weight: 900;
+      font-weight:600; /*changes */
       margin-left: 20px;
 }
 .input-container {
@@ -179,10 +183,11 @@ nav ul li a:hover {
     grid-template-columns:repeat(2,1fr);
     justify-content: center;
     padding:20px;
+    width: 60%;
 }
 .input-container label {
     font-size:1rem;
-    font-weight: 800;
+    font-weight:400; /*changes */
 
 }
 .input-container input {
@@ -190,10 +195,11 @@ nav ul li a:hover {
     flex-direction: column;
     padding:10px 20px;
     margin:15px 0px;
-    width:60%;
+    width:90%;
 }
 .input-container input::placeholder{
     font-size:1rem; color: #b3b4b8;
+    text-transform: capitalize;
 }
 .request {
     display: flex;
@@ -204,17 +210,16 @@ nav ul li a:hover {
     position: relative;
 }
 .btn input {
-    position: absolute; left:20%;
+    position: absolute; left:15%;
+    width: fit-content;
     border: none;
     background-color: #000000;
     border-radius:5px;
     color: #ffffff;
     font-size:1.3rem;
-    padding:10px 20px;
+    padding:10px;
+    text-transform: capitalize; /*changes */
 }
-
-
-
 
 /* SPECIAL MENU SECTION */
 .special-menus {
@@ -225,7 +230,7 @@ nav ul li a:hover {
 .menu-heading {
     text-align: center; 
     font-size:2rem;
-     font-weight:900;
+     font-weight:600; /*changes */
 }
 .special-menu-container{
    display: grid;
@@ -236,36 +241,42 @@ nav ul li a:hover {
 }
 .menu-content{
     position: relative;
-    margin-top: 10px;
+    margin-top:35px; /*changes */
 }
 .menu-content img {
     width:350px; height: 300px; object-fit: cover;
 }
 .menu-text {
-     line-height:35px; padding:5px 0px;
+/*line-height:50px; */ padding:5px 0px;
 }
 .menu-time {
-    position: absolute; top:20px;  left:60%; background-color: #f3af24;
+    position: absolute; top:20px;
+    right: 10px;   background-color: #f3af24;
     color: #ffffff;
-    font-weight: 300;
+    font-weight:100; 
     border-radius:5px;
-    padding:7px;
+    padding:7px; 
 }
 .para p {
-    font-size:1.5rem; font-weight:800; letter-spacing:1px;
+    font-size:1.5rem; font-weight:500; letter-spacing:1px;
+    margin-bottom:15px; 
 }
 .price {
-    background-color: rgb(224, 227, 230);
+    background-color:#ffffff;  
      color: #f3af24; padding:12px;
-     border-radius: 50%;
+     border-radius:50px; 
+     box-shadow:2px 2px 10px rgba(0,0,0,0.2);
      font-weight: 900;
+     padding:15px;
       width: fit-content;
+      margin:15px 0px; 
 }
 .review-menu{
     display: flex; flex-direction: row;
 }
 .review-menu h3{
-    font-size: 1.3rem; font-weight:900;
+    font-size: 1.3rem; font-weight:500; 
+
 }
 .review-menu i {
     color: yellow;
@@ -292,7 +303,7 @@ nav ul li a:hover {
     margin: auto;
 }
 .news-event-heading{
-    text-align: center; font-size:2rem; font-weight:900;
+    text-align: center; font-size:2rem; font-weight:600;
 }
 .news-event-container {
     display: flex; flex-direction: row;
@@ -319,8 +330,8 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 .other-text {
-    font-weight: 900;
-    font-size:1.3rem;
+    font-weight:500;
+    font-size:1.4rem;
     color: #ffffff;
 }
 
@@ -332,7 +343,6 @@ nav ul li a:hover {
 }
 .news-event-second-content img {
     width:350px; height: 300px; object-fit: cover;
-    transition:all .5s ease-out;
 }
 .promotion  {
     display: flex;
@@ -360,9 +370,8 @@ nav ul li a:hover {
 }
 .second-text p {
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight:500; 
     letter-spacing: 1px;
-    transition:all .5s ease;
 }
 .second-text p:hover {
     color: #f44749;
@@ -389,6 +398,7 @@ footer {
 .footer-heading {
     color: #ffffff;
     margin:20px 0px 15px 12px;
+    font-weight: 500;
 }
 .footer-container {
     display: flex;
@@ -397,7 +407,7 @@ footer {
     color: #ffffff;
 }
 .footer-container h3 {
-    font-weight:800;
+    font-weight:500;
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
 }
@@ -438,6 +448,7 @@ footer {
         display: flex;
         flex-direction:column;
         align-items: center;
+        justify-content: center;
     }
 }
 @media (max-width:900px) {
@@ -447,11 +458,11 @@ footer {
         gap: 20px;
     } 
     .image-text-content img {
-        width:400px; height:auto;   
+        width:350px; height:auto;   
    }
    .caption h1 {
     font-size:2rem;
-   font-weight: 800;
+   font-weight:600;
    margin-bottom:25px;
 }
 }
@@ -496,17 +507,19 @@ footer {
   .menu-heading, 
   .news-event-heading{ 
     font-size:1rem;
-     font-weight:600;
+     font-weight:400;
 }
-    .reservation-heading h1 {
-        font-size:1rem;
-        font-weight:700;}
+.reservation-heading h1 {
+    font-size:1rem;
+    font-weight:600;
+}  /* changes */
    .input-container {
         display: grid;
         grid-template-columns:repeat(1,1fr);
         justify-content: center;
+        margin-left:25px; 
         padding:20px;
-       margin-left:25px;
+        width:90%;
     }
     .news-event-content img {
         width:380px; height: auto;
@@ -519,19 +532,38 @@ footer {
   }
   footer {
     position: absolute;
-    top:10%;
-    
+    top:10%;   
 }
 }
 @media (max-width:480px) {
-.logo a {
-    font-size:1.2rem;
-    font-weight:600;
+    .logo a {
+        font-size:1.2rem;
+        font-weight:600;
+    }
+    .btn-container .btn {
+        font-size: 1.2rem;
+    }
+    .menu-content img {
+        width:330px; height: 300px; object-fit: cover;
+    }  /* changes */
+    .special-menu-container{
+        display: grid;
+         grid-template-columns:repeat(auto-fit,minmax(100px,330px));
+         justify-content: center;
+     }
+     .news-event-second-container{
+        display: grid; grid-template-columns:repeat(auto-fit,minmax(100px,330px));
+        justify-content: center;
+        gap:1rem;
+    }
+    .news-event-second-content img {
+        width:330px; height: 300px; object-fit: cover;
+    }
+    .news-event-content img {
+        width:330px; height: auto;
+          }  
 }
- .btn-container .btn {
-     font-size:1.2rem;
- }
-}
+
 
 
  /* OUR STORY SECTION . THE SECOND PAGE */
@@ -548,19 +580,19 @@ footer {
 }
 .kitchen-text-heading{
     position: absolute;
-    top:40%;
+    top:50%;
     left:30%;
     text-align: center;
 }
 .kitchen-text-heading h1 {
     color: #ffffff;
-    font-size: 3rem;
-    font-weight:900;
-    margin-bottom: 15px;
+    font-size:5rem;
+    font-weight:600;
+    margin-bottom:10px;
 }
 .kitchen-text-heading p {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight:500;
     color: #ffffff;
 }
 
@@ -675,11 +707,12 @@ footer {
  }
 }
  @media (max-width:760px) {
-   
-      .kitchen-text-heading{
+    .kitchen-text-heading{
         position: absolute;
       left:10%;
-      font-size:0.7rem;
+       }
+       .kitchen-text-heading h1 {
+           font-size:2rem;
        }
 .story-container {
     display: flex;
@@ -700,11 +733,10 @@ footer {
  }
  }
  /* MEDIA QUERY AT 565PX */
-@media (max-width:565px){  
+@media (max-width:569px){  
     .kitchen-text-heading{
         position: absolute;
       left:0;
-      font-size:0.7rem;
        }
     #first-btn {
         margin:10px 0px;
@@ -734,19 +766,19 @@ footer {
 }
 .delicacy-text-heading{
     position: absolute;
-    top:40%;
-    left:30%;
+    top:50%;
+    left:29%;
     text-align: center;
 }
 .delicacy-text-heading h1 {
     color: #ffffff;
-    font-size: 3rem;
-    font-weight:900;
+    font-size:5rem;
+    font-weight:600;
     margin-bottom: 15px;
 }
 .delicacy-text-heading p {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight:600;
     color: #ffffff;
 }
 
@@ -820,21 +852,22 @@ footer {
 @media (max-width:760px) {
     .delicacy-text-heading{
       position: absolute;
-    left:20%;
+      top:40%;
+      left:25%;
     font-size:1.5rem;
      }
+     .delicacy-text-heading h1 {
+        font-size: 2rem;
+    }
      .breakfast-menus {
      padding:7rem 0rem;
     }
     }
-    @media (max-width:565px){
-        .delicacy-text-heading{
-            position: absolute;
-          left:5%;
-          font-size:1rem;
-           } 
-    }
     @media (max-width:480px){
+        .delicacy-text-heading {
+            position: absolute;
+            left:20%;
+        }
         .lunch-menu-container{
             display: grid; grid-template-columns:repeat(1fr,1fr);
               justify-content:center; 
@@ -865,19 +898,19 @@ footer {
     }
     .update-text-heading{
         position: absolute;
-        top:40%;
-        left:20%;
+        top:45%;
+        left:25%;
         text-align: center;
     }
     .update-text-heading h1 {
         color: #ffffff;
-        font-size:3.7rem;
-        font-weight:900;
+        font-size:5rem;
+        font-weight:600;
         margin-bottom: 15px;
     }
     .update-text-heading p {
-        font-size: 1.5rem;
-        font-weight: 800;
+        font-size: 1rem;
+        font-weight:500;
         color: #ffffff;
     }
     .latest-update-heading{
@@ -903,8 +936,8 @@ footer {
     /* MEDIA QUERY OF NEWS AND UPDATE PAGE */
     @media (max-width:760px) {
         .update-text-heading{
-          position: absolute;
-        left:10%;
+            position: absolute;
+            left:10%;
         font-size:1rem;
          }
          .update-text-heading h1 {
@@ -938,13 +971,13 @@ footer {
         }
         .contact-text-heading h1 {
             color: #ffffff;
-            font-size: 3rem;
-            font-weight:900;
+            font-size: 5rem;
+            font-weight:600;
             margin-bottom: 15px;
         }
         .contact-text-heading p {
-            font-size: 1.5rem;
-            font-weight: 800;
+            font-size: 1rem;
+            font-weight:600;
             color: #ffffff;
         }
         /* leave a message */
@@ -968,6 +1001,7 @@ footer {
             flex-direction: column;
             padding:10px 20px;
             margin:20px 0px;  
+            width:100%;
         }
         .message-heading{
             font-size:2.5rem;
@@ -996,6 +1030,7 @@ footer {
             border-radius:5px;
             color: #ffffff;
             font-size:1.3rem;
+            width:fit-content;
             padding:10px 25px;
         }
         .days-content{
@@ -1039,8 +1074,7 @@ footer {
 
         .contact-text-heading{
             position: absolute;
-          left:20%;
-          font-size:1.2rem;
+          left:25%;
            }
            .message-heading{
             font-size:1.2rem;
@@ -1051,24 +1085,18 @@ footer {
             display: flex;
             flex-direction:column;
             align-items: center;
+            
         }
         .name-number-container{
             display: flex;
             flex-direction:column;
              gap: 10px;
         }
-        .name-number-container input,
-        .email-contact input{
-            width:80%;
-        }
-        .message-contact textarea{
-           width:80%;
-        }
     }
     @media (max-width:480px) {
         .contact-text-heading{
             position: absolute;
-          left:5%;
+          left:10%;
           font-size:1.2rem;
            }
     }
